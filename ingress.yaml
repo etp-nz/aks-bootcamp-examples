@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: clippy-ingress
+  annotations:
+    kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+  rules:
+  - host: clippy.c104e19ad9314c20878f.australiaeast.aksapp.io
+    http:
+      paths:
+      - backend:
+          serviceName: clippy-service
+          servicePort: 80
+        path: /
