@@ -6,7 +6,7 @@ metadata:
     kubernetes.io/ingress.class: addon-http-application-routing
 spec:
   rules:
-  - host: clippy.c104e19ad9314c20878f.australiaeast.aksapp.io
+  - host: <your-favorite-supervillian>.c104e19ad9314c20878f.australiaeast.aksapp.io
     http:
       paths:
       - backend:
